@@ -2,14 +2,12 @@ What are the possible ways to create objects in JavaScript ?
 There are many ways to create objects in javascript as below
 
 Object constructor:
-
 The simplest way to create an empty object is using the Object constructor. Currently this approach is not recommended.
 
 var object = new Object();
 
 
 Object's create method:
-
 The create method of Object creates a new object by passing the prototype object as a parameter
 
 var object = Object.create(null);
@@ -17,14 +15,12 @@ var object = Object.create(null);
 
 
 Object literal syntax:
-
 The object literal syntax is equivalent to create method when it passes null as parameter
 
 var object = {};
 
 
 Function constructor:
-
 Create any function and apply the new operator to create object instances,
 
 function Person(name){
@@ -37,7 +33,6 @@ var object = new Person("Khadija");
 
 
 Function constructor with prototype:
-
 This is similar to function constructor but it uses prototype for their properties and methods,
 
 function Person(){}
@@ -71,13 +66,13 @@ class Person {
    }
 }
 
-var object = new Person("Sudheer");
+var object = new Person("Khadija");
 Singleton pattern:
 
 A Singleton is an object which can only be instantiated one time. Repeated calls to its constructor return the same instance and this way one can ensure that they don't accidentally create multiple instances.
 
 var object = new function(){
-   this.name = "Sudheer";
+   this.name = "Khadija";
 }
 
 
@@ -262,8 +257,6 @@ console.log(counter); // 30 (because the variable in if block won't exist here)
 
 
 What is the difference between let and var
-You can list out the differences in a tabular format
-
 var	let
 It is been available from the beginning of JavaScript	Introduced as part of ES6
 It has function scope	It has block scope
@@ -448,7 +441,7 @@ As per the above code, the inner function(i.e, greetingInfo) has access to the v
 ================ 16 ===================
 What is scope in javascript
 Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code.
-
+https://dmitripavlutin.com/javascript-scope/
 
 
 
@@ -720,6 +713,7 @@ var argsArray = Array.prototype.slice.call(arguments);
 
 
 ================ 25 =================
+
 What is a rest parameter
 Rest parameter is an improved way to handle function parameters which allows us to represent an indefinite number of arguments as an array. The syntax would be as below,
 
